@@ -1,12 +1,10 @@
 <?php
-
-$db = mysql_connect('localhost','root','Xx420944');
-mysql_select_db('santis', $db);
+//TODO: hacerlo bien, no esta chanchada
+include('database.inc.php');
 
 // Slider Principal
-
 $sql = 'SELECT * FROM slider ;';
-$result = mysql_query($sql, $db) or die(mysql_error());
+$slider = mysql_query($sql, $db) or die(mysql_error());
 //$arrSlider = mysql_fetch_array($result);
 
 

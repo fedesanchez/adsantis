@@ -162,7 +162,7 @@
               
              
             <?php
-            while ($fila = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            while ($fila = mysql_fetch_array($slider, MYSQL_ASSOC)) {
     
             ?>
 
@@ -182,7 +182,7 @@
                         data-easing="Power4.easeOut"
                         data-endspeed="400"
                         data-endeasing="Power1.easeIn"
-                        ><img src="images/new-slider/s2-img2.png" alt="" class="img-responsive">
+                        ><img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive">
                     </div>
                     
                     <!-- LAYER NR. 5 -->
@@ -195,7 +195,16 @@
                         data-easing="Back.easeOut"
                         data-endspeed="400"
                         data-endeasing="Power1.easeIn"
-                        ><img src="images/new-slider/arginina.png" alt="" class="img-responsive">
+                        >
+                        <div class="inner">
+                                    <h3><?php echo $fila["desc_sup_prod"];?></h3>
+                                   <p>
+                                        <h1><?php echo $fila["nombre_producto"];?></h1>
+                                    </p>
+                                    <h3><?php echo $fila["desc_inf_prod"];?></h3>
+                                    
+                        </div>
+                        <!--<img src="images/new-slider/arginina.png" alt="" class="img-responsive">-->
                     </div>
              </li>
             <?php } ?>

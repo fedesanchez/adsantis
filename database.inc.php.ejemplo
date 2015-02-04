@@ -1,0 +1,12 @@
+<?php
+
+$arrConfig = array( 'user' => 'fulano',
+					'host'=>'localhost',
+					'pass'=>'miclave',
+					'dbname'=>'aero_santis'// esto es por que el hosting de prueba solo me deja crear bases con el prefijo aero_
+				);
+
+$db = mysql_connect($arrConfig['host'],$arrConfig['user'],$arrConfig['pass']);
+mysql_select_db($arrConfig['dbname'], $db);
+
+?>
