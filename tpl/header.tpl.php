@@ -1,3 +1,7 @@
+<?php 
+    include('includes/funciones.inc.php');
+    $menu=get_items_menu();
+?>
 <header>
             
             <div class="header-bg">
@@ -54,10 +58,24 @@
                             <li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
 
                             
-                            <li class="dropdown"><a href="productos.php?categoria=profesional">Profesional<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#">Profesional<b class="icon-angle-down"></b></a>
+                                <ul class="dropdown-menu">
+                                    <?php foreach ($menu['profesional'] as $key => $value) { ?>
+                                    <li>
+                                        <a href="productos.php?categoria=<?php echo $value['id']; ?>"><?php echo $value['nombre'] ?></a>
+                                    </li>
+                                    <?php } ?>
+                                </ul>
                             </li>
                             
-                            <li class="dropdown"><a href="productos.php?categoria=gran_consumo">Gran Consumo<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#">Gran Consumo<b class="icon-angle-down"></b></a>
+                                <ul class="dropdown-menu">
+                                    <?php foreach ($menu['gran_consumo'] as $key => $value) { ?>
+                                    <li>
+                                        <a href="productos.php?categoria=<?php echo $value['id']; ?>"><?php echo $value['nombre'] ?></a>
+                                    </li>
+                                    <?php } ?>
+                                </ul>
                             </li>
                             
                             <li class="dropdown"><a href="#" >Consejos<b class="icon-angle-down"></b></a>

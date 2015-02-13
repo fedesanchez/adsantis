@@ -44,8 +44,8 @@
             	<div class="bread-heading"><h1>Productos</h1></div>
                 <div class="bread-crumb pull-right">
                 <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">Productos</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Productos</a></li>
                 </ul>
                 </div>
             </div>
@@ -87,9 +87,9 @@
                             <img alt="" class="img-responsive producto" src="<?php echo $linea['img']; ?>"/>
                           </div>
                         <div class="doc-name">
-                            <div class="doc-name-class"><?php echo $linea['nombre']; ?></div><span class="doc-title">Shampoo, enjuague y crema</span>
+                            <div class="doc-name-class"><?php echo $linea['nombre']; ?></div>                      
                             <hr />
-                            <p><?php echo $linea['descripcion']; ?></p>
+                            <p><?php echo $linea['resumen']; ?></p>
                           </div>
                           </a>
                          </div>

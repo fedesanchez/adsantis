@@ -1,6 +1,6 @@
 <?php
 //TODO: hacerlo bien, no esta chanchada
-include('database.inc.php');
+include('includes/database.inc.php');
 
 // Slider Principal
 $sql = 'SELECT * FROM slider ;';

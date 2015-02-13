@@ -1,11 +1,9 @@
 <?php
 if(!isset($_GET['categoria']))die("No tiene Permisos");
 //TODO: hacerlo bien, no esta chanchada
-include('database.inc.php');
+include('includes/database.inc.php');
 
-if($_GET['categoria']=="profesional")$id_categoria=1;
-if($_GET['categoria']=="gran_consumo")$id_categoria=2;
-
+$id_categoria=$_GET['categoria'];
 
 // Slider Principal
 $sql = "SELECT * FROM linea where id_categoria=$id_categoria ;";

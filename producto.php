@@ -1,7 +1,7 @@
 <?php
 if(!isset($_GET['id']))die("No tiene Permisos");
 //TODO: hacerlo bien, no esta chanchada
-include('database.inc.php');
+include('includes/database.inc.php');
 
 
 $id=$_GET['id'];
