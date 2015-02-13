@@ -7,8 +7,9 @@ $sql = 'SELECT * FROM slider ;';
 $slider = mysql_query($sql, $db) or die(mysql_error());
 //$arrSlider = mysql_fetch_array($result);
 
+$sql2 = 'SELECT * FROM slider_ta ORDER BY RAND() LIMIT 1;';
+$random_slider = mysql_query($sql2, $db) or die(mysql_error());
+$sliderta = mysql_fetch_assoc($random_slider);
 
-
-//print_r($arrSlider);
 include('tpl/index.tpl.php');
 ?>

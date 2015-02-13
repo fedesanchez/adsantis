@@ -19,9 +19,8 @@
                                 	<i class="fa fa-check-square icon-list-icons"></i>
                                 	<div class="iconlist-content">
                                     	
-                                    	<div class="iconlist-title">Agrega Brillo</div>
-                                        <p class="iconlist-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudantium, totam rem aperiam. </p>
+                                    	<div class="iconlist-title"><?php echo $sliderta['tit_prop_1'] ;?></div>
+                                        <p class="iconlist-text"><?php echo $sliderta['desc_prop_1'] ;?> </p>
                                     </div>
                                     
                                 	</li>
@@ -30,9 +29,8 @@
                                 	<i class="fa fa-check-square icon-list-icons"></i>
                                 	<div class="iconlist-content">
                                     	
-                                    	<div class="iconlist-title">Aporta Fuerza</div>
-                                        <p class="iconlist-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudantium, totam rem aperiam. </p>
+                                    	<div class="iconlist-title"><?php echo $sliderta['tit_prop_2'] ;?></div>
+                                        <p class="iconlist-text"><?php echo $sliderta['desc_prop_2'] ;?></p>
                                     </div>
                                    
                                 	</li>
@@ -41,9 +39,8 @@
                                 	<i class="fa fa-check-square icon-list-icons"></i>
                                 	<div class="iconlist-content">
                                     	
-                                    	<div class="iconlist-title">ANTIFRIZZ</div>
-                                        <p class="iconlist-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudantium, totam rem aperiam. </p>
+                                    	<div class="iconlist-title"><?php echo $sliderta['tit_prop_3'] ;?></div>
+                                        <p class="iconlist-text"><?php echo $sliderta['desc_prop_3'] ;?></p>
                                     </div>
                                 	</li>
                                 </ul>
@@ -80,3 +77,11 @@
                   </div>
              </div>    
             <!--Purchase Box-->
+
+            <style>
+            
+                #second .bg{
+                    background:url(<?php echo $sliderta['img_producto'] ;?>) !IMPORTANT;
+                }            
+            
+            </style>
