@@ -7,6 +7,7 @@ $arrConfig = array( 'user' => 'fulano',
 				);
 
 $db = mysql_connect($arrConfig['host'],$arrConfig['user'],$arrConfig['pass']);
+mysql_set_charset('utf8',$db);
 mysql_select_db($arrConfig['dbname'], $db);
 
 ?>
