@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--[if gt IE 8]> <html class="ie9" lang="en"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+    <title>OLIO -> By Anna De Sanctis</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/orange.css" id="style-switch" />
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->    
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+    <link rel="stylesheet" type="text/css" href="css/inline.min.css" /></head>
+
+<body>
+
+    <?php include('tpl/header.tpl.php'); ?>
+    
+    <section class="complete-content content-footer-space">
+    
+    <!--Mid Content Start-->
+    
+    
+     <div class="about-intro-wrap pull-left">
+     
+     <div class="bread-crumb-wrap ibc-wrap-4">
+    	<div class="container">
+    <!--Title / Beadcrumb-->
+         	<div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
+            	<div class="bread-heading"><h1>Puntos de Venta</h1></div>
+                <div class="bread-crumb pull-right">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">Puntos de Venta</a></li>
+                </ul>
+                </div>
+            </div>
+         </div>
+     </div>
+     
+     <!--map-->
+            	<div class="pull-left map-full no-pad contact-v1-map">
+                	<div id="map-canvas"></div>
+                	<div class="map-shadow"></div>
+                </div>
+    
+    </section>
+    <?php include('tpl/footer.tpl.php');?>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script type="text/javascript">
+        
+        $("#map-canvas").gMap({
+            
+            styles:[{stylers:[
+        {
+            featureType: 'water', // set the water color
+            elementType: 'geometry.fill', // apply the color only to the fill
+            stylers: [
+                { color: '#adc9b8' }
+            ]
+        },{
+            featureType: 'landscape.natural', // set the natural landscape
+            elementType: 'all',
+            stylers: [
+                { hue: '#809f80' },
+                { lightness: -35 }
+            ]
+        }
+        ,{
+            featureType: 'poi', // set the point of interest
+            elementType: 'geometry',
+            stylers: [
+                { hue: '#f9e0b7' },
+                { lightness: 30 }
+            ]
+        },{
+            featureType: 'road', // set the road
+            elementType: 'geometry',
+            stylers: [
+                { hue: '#d5c18c' },
+                { lightness: 14 }
+            ]
+        },{
+            featureType: 'road.local', // set the local road
+            elementType: 'all',
+            stylers: [
+                { hue: '#ffd7a6' },
+                { saturation: 100 },
+                { lightness: -12 }
+            ]
+        }
+    ]}],
+            controls: false,
+            scrollwheel: false,
+            maptype: 'ROADMAP',
+            markers: [
+                {
+                    latitude: 40.753317,
+                    longitude: -73.968905,
+                    icon: {
+                        image: "images/location.png",
+                        iconsize: [85, 121],
+                        iconanchor: [85, 121]
+                    }
+                },
+
+            ],
+            icon: {
+                image: "images/location.png", 
+                iconsize: [85, 121],
+                iconanchor: [85, 121]
+            },
+            latitude: 40.753317,
+            longitude: -73.968905,
+            
+            zoom: 12,
+            mapTypeId: 'Styled'
+            
+            
+        });
+        
+        </script>
+    
+</body>
+</html>

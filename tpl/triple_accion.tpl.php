@@ -43,6 +43,7 @@
                                         <p class="iconlist-text"><?php echo $sliderta['desc_prop_3'] ;?></p>
                                     </div>
                                 	</li>
+
                                 </ul>
                                 </div>
                                 

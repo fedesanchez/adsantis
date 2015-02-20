@@ -55,7 +55,7 @@
                                   
                                   
                                   <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
+                            <li class="active"><a href="./"><i class="icon-home"></i>Home</a></li>
 
                             
                             <li class="dropdown"><a href="#">Profesional<b class="icon-angle-down"></b></a>
@@ -83,8 +83,8 @@
 
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i>Encontranos<b class="icon-angle-down"></b></a>
                             <ul class="dropdown-menu">
-                                    <li><a href="puntos.html">Puntos de venta</a></li>
-                                    <li><a href="salones.html">Salones</a></li>
+                                    <li><a href="encontranos.php?tipo=puntos">Puntos de venta</a></li>
+                                    <li><a href="encontranos.php?tipo=salones">Salones</a></li>
                                   </ul>
                             </li>
 
