@@ -38,11 +38,11 @@
     	<div class="container">
     <!--Title / Beadcrumb-->
          	<div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
-            	<div class="bread-heading"><h1>Puntos de Venta</h1></div>
+            	<div class="bread-heading"><h1><?php echo $tit;?></h1></div>
                 <div class="bread-crumb pull-right">
                 <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">Puntos de Venta</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="encontranos.php?tipo=<?=$tipo;?>"><?php echo $tit;?></a></li>
                 </ul>
                 </div>
             </div>
@@ -59,7 +59,34 @@
     <?php include('tpl/footer.tpl.php');?>
     <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <script type="text/javascript">
+
+    $.get("http://ipinfo.io", function(response) {
+        var loc=response.loc.split(",");
+        mapa(loc[0],loc[1]);
         
+    }, "jsonp");    
+
+    function mapa(latitude,longitude){
+
+        var puntos=<?php echo(json_encode($arrPuntos));?>;
+        var icon={
+                image: "images/location.png",
+                iconsize: [85, 121],
+                iconanchor: [85, 121]
+            };  
+        var markers=[];
+        for (var i = puntos.length - 1; i >= 0; i--) {
+            var tmp={
+                latitude:Number(puntos[i].longitud),
+                longitude:Number(puntos[i].latitud),
+                icon:icon,
+                popup:false,
+                html:"<b>"+puntos[i].nombre+"</b><p>"+puntos[i].direccion+"</p><p>"+puntos[i].telefono+"</p><p>"+puntos[i].email+"</p>"
+            };
+            markers.push(tmp);
+            
+        };
+          
         $("#map-canvas").gMap({
             
             styles:[{stylers:[
@@ -101,36 +128,21 @@
             ]
         }
     ]}],
-            controls: false,
-            scrollwheel: false,
+            controls: true,
+            scrollwheel: true,
             maptype: 'ROADMAP',
-            markers: [
-                {
-                    latitude: 40.753317,
-                    longitude: -73.968905,
-                    icon: {
-                        image: "images/location.png",
-                        iconsize: [85, 121],
-                        iconanchor: [85, 121]
-                    }
-                },
-
-            ],
-            icon: {
-                image: "images/location.png", 
-                iconsize: [85, 121],
-                iconanchor: [85, 121]
-            },
-            latitude: 40.753317,
-            longitude: -73.968905,
-            
-            zoom: 12,
+            markers: markers,
+            latitude: latitude,
+            longitude: longitude,
+            zoom: 13,
             mapTypeId: 'Styled'
             
             
         });
-        
-        </script>
+
+}        
+</script>
+
     
 </body>
 </html>
