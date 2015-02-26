@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/slides.css" />
     <link rel="stylesheet" type="text/css" href="css/inline.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 	
 
 </head>
