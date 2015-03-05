@@ -36,10 +36,10 @@
      <div class="about-intro-wrap pull-left">
      
              <div class="bread-crumb-wrap ibc-wrap-1">
-            	<div class="container">
+                <div class="container">
             <!--Title / Beadcrumb-->
-                 	<div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
-                    	<div class="bread-heading"><h1><?php echo $linea['nombre']; ?></h1></div>
+                    <div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
+                        <div class="bread-heading"><h1><?php echo $linea['nombre']; ?></h1></div>
                         <div class="bread-crumb pull-right">
                         <ul>
                         <li><a href="#">Home</a></li>
@@ -53,7 +53,7 @@
 
      
          <div class="container">
-         	
+            
             <div class="row">
             
             <!--About-us top-content-->
@@ -61,7 +61,7 @@
 
               <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 no-pad">
 
-            	   <img class="img-responsive pull-left" alt="" src="images/about-dummy.png"/>
+                   <img class="img-responsive pull-left" alt="" src="<?php echo $linea['img']; ?>"/>
 
               </div>
 
