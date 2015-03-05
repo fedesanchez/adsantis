@@ -25,7 +25,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/inline.min.css" /></head>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 <body>
 
     <?php include('tpl/header.tpl.php');?>
