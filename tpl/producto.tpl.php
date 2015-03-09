@@ -42,8 +42,8 @@
                         <div class="bread-heading"><h1><?php echo $linea['nombre']; ?></h1></div>
                         <div class="bread-crumb pull-right">
                         <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#"><?php echo $linea['categoria']; ?></a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="productos.php?categoria=<?php echo $linea['id_categoria']; ?>"><?php echo $linea['categoria']; ?></a></li>
                         <li><a href="#"><?php echo $linea['nombre']; ?></a></li>
                         </ul>
                         </div>

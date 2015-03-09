@@ -8,7 +8,9 @@
                           <div class="container">
                           	<div class="row">
                           
-                          <div class="bg col-lg-4 col-sm-4 col-md-5 col-xs-12 notViewed wow fadeInUp" data-wow-delay="1.5s" data-wow-offset="200"></div>
+                          <div class="bg col-lg-4 col-sm-4 col-md-5 col-xs-12 notViewed wow fadeInUp" data-wow-delay="1.5s" data-wow-offset="200">
+                            <img class="img-responsive" src="<?php echo $sliderta['img_producto'];?>">
+                          </div>
                           
                             <div class="float-right col-lg-7 col-sm-7 col-md-7 col-xs-12">
                                 
@@ -67,7 +69,7 @@
                         <div class="purchase-strip-text">Para ver mas sobre <span class="ipurcahse-strip-text">este producto</span> ---></div>
                         <div class="color-4">
                             <p class="ipurchase-paragraph">
-                                <button class="icon-cart btn btn-4 btn-4a notViewed wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="150">CLICK AQUI</button>
+                               <a href="<?php echo $sliderta['link'] ;?>"> <button class="icon-cart btn btn-4 btn-4a notViewed wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="150">CLICK AQUI</button></a>
                             </p>
                         </div>
                         
@@ -78,11 +80,3 @@
                   </div>
              </div>    
             <!--Purchase Box-->
-
-            <style>
-            
-                #second .bg{
-                    background:url(<?php echo $sliderta['img_producto'] ;?>) !IMPORTANT;
-                }            
-            
-            </style>
