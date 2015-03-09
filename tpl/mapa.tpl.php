@@ -70,7 +70,7 @@
 
         var puntos=<?php echo(json_encode($arrPuntos));?>;
         var icon={
-                image: "images/location.png",
+                image: "images/map-marker.png",
                 iconsize: [85, 121],
                 iconanchor: [85, 121]
             };  
