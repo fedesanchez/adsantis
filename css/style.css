@@ -3,11 +3,19 @@
 }
 
 .producto{
-	max-width: 340px;
+	/*max-width: 340px;*/
 	max-height: 206px;
 }
 
 #second .bg img{
 max-width: 449px;
 max-height: 507px;	
+}
+
+.novedad{
+	max-height: 200px;
+}
+
+.sin_imagen{
+ min-height: 200px;
 }

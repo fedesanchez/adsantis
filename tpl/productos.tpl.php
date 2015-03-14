@@ -83,10 +83,14 @@
                         
                           <a href="./producto.php?id=<?php echo $linea['id_linea']; ?>">
                           <div class="zoom-wrap">
+                            <?php 
+                              // si no tiene imegen pongo heigth fijo 
+                              $clase=($linea['img']=="")? 'sin_imagen' : 'producto';
+                            ?>                                
                             <div class="zoom-icon"></div>
-                            <img alt="" class="img-responsive producto" src="<?php echo $linea['img']; ?>"/>
+                            <img alt="" class="img-responsive <?=$clase;?>" src="<?php echo $linea['img']; ?>"/>
                           </div>
-                        <div class="doc-name">
+                          <div class="doc-name">
                             <div class="doc-name-class"><?php echo $linea['nombre']; ?></div>                      
                             <hr />
                             <p><?php echo $linea['resumen']; ?></p>
