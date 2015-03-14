@@ -57,14 +57,30 @@
     
     </section>
     <?php include('tpl/footer.tpl.php');?>
-    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
     <script type="text/javascript">
 
-    $.get("http://ipinfo.io", function(response) {
+    var POSICION_EXACTA=false;
+    var ba=[-34.6033, -58.3816];
+
+    if(!!navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            POSICION_EXACTA=true;
+            mapa(position.coords.latitude,position.coords.longitude);
+        });
+    }
+
+    if(!POSICION_EXACTA){
+        // si no esta habilitado busco en ipinfo
+        $.get("http://ipinfo.io", function(response) {
         var loc=response.loc.split(",");
+        if(response.country!=="AR"){
+            //si no es argentina centro en baires
+            loc=ba;
+        }
         mapa(loc[0],loc[1]);
-        
-    }, "jsonp");    
+        }, "jsonp");        
+    }
 
     function mapa(latitude,longitude){
 
@@ -139,6 +155,8 @@
             
             
         });
+
+            
 
 }        
 </script>

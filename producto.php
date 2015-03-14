@@ -13,5 +13,9 @@ $linea=mysql_fetch_array($tmp, MYSQL_ASSOC);
 
 $atributos = explode(",", $linea['atributos']);
 
+$sql3 = 'SELECT * FROM linea where novedad=1 ORDER BY RAND() LIMIT 4;';
+$novedades = mysql_query($sql3, $db) or die(mysql_error());
+$data_wow_delay=0.2;
+
 include('tpl/producto.tpl.php');
 ?>
