@@ -87,8 +87,8 @@
         var puntos=<?php echo(json_encode($arrPuntos));?>;
         var icon={
                 image: "images/map-marker.png",
-                iconsize: [85, 121],
-                iconanchor: [85, 121]
+                iconsize: [100,53],
+                iconanchor: [50,53]
             };  
         var markers=[];
         for (var i = puntos.length - 1; i >= 0; i--) {

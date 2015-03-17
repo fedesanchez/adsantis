@@ -2,9 +2,10 @@
     font-size: 70px !important;
 }
 
-.producto{
-	/*max-width: 340px;*/
-	max-height: 206px;
+.producto {
+    max-height: 206px;
+    max-width: 340px;
+    margin-left: 33%;
 }
 
 #second .bg img{
