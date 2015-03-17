@@ -82,7 +82,7 @@
                         <div class="doctor-box col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-offset="200">
                         
                           <a href="./producto.php?id=<?php echo $linea['id_linea']; ?>">
-                          <div class="zoom-wrap">
+                          <div class="zoom-wrap" style="background-color:<?php echo $linea['color_fondo']; ?>">
                             <?php 
                               // si no tiene imegen pongo heigth fijo 
                               $clase=($linea['img']=="")? 'sin_imagen' : 'producto';
