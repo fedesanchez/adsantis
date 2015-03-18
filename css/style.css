@@ -5,7 +5,9 @@
 .producto {
     max-height: 206px;
     max-width: 340px;
-    margin-left: 33%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .producto_grande{
@@ -19,8 +21,11 @@ max-height: 507px;
 
 .novedad{
 	max-height: 200px;
-	margin-left: 27%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .sin_imagen{
  min-height: 200px;
