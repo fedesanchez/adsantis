@@ -1,9 +1,6 @@
 .content-tabs{
 	display: none;
-}
-
-.inner h1 {
-    font-size: 70px !important;
+	/* quick fix del probema de flickering... hay un onReady en footer*/
 }
 
 .producto {
@@ -40,6 +37,7 @@ max-height: 507px;
 	color: white;	
 	font-weight:300;
 	font-size: 20px;
+	font-size: 2.1vw;
 }
 
 .slider_sup{
@@ -47,6 +45,7 @@ max-height: 507px;
 	color: white;
 	font-weight:800;
 	font-size: 40px;
+	font-size: 3.6vw;
 }
 
 .slider_inf{
@@ -54,4 +53,15 @@ max-height: 507px;
 	color: white;
 	font-weight:400;
 	font-size: 18px;
+	font-size: 1.6vw
+}
+
+.inner p {
+    margin: -13px 0 10px !important;
+}
+
+@media screen and (max-width: 568px) {
+    .inner P {
+        margin: -7vh 0 10px !important;
+    }
 }

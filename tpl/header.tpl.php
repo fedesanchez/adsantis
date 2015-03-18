@@ -50,15 +50,15 @@
                           <a href="./"><div class="logo"></div></a>
                         </div>
                             
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                   
                                   
-                                  <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="./"><i class="icon-home"></i>Home</a></li>
 
                             
-                            <li class="dropdown"><a href="#">Profesional<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profesional<b class="icon-angle-down"></b></a>
                                 <ul class="dropdown-menu">
                                     <?php foreach ($menu['profesional'] as $key => $value) { ?>
                                     <li>
@@ -68,7 +68,7 @@
                                 </ul>
                             </li>
                             
-                            <li class="dropdown"><a href="#">Gran Consumo<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gran Consumo<b class="icon-angle-down"></b></a>
                                 <ul class="dropdown-menu">
                                     <?php foreach ($menu['gran_consumo'] as $key => $value) { ?>
                                     <li>
@@ -97,12 +97,12 @@
                             
 
                           </ul>
-                                </div><!-- /.navbar-collapse -->
+                        </div><!-- /.navbar-collapse -->
                                 
                                 
                                 
-                              </div><!-- /.container-fluid -->
-                            </nav>
+                        </div><!-- /.container-fluid -->
+                        </nav>
                     	</div>    
                     </div><!--Topbar End-->
                 	</div>
