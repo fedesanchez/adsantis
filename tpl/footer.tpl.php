@@ -92,5 +92,10 @@
     <script type="text/javascript" src="js/jquery.sticky.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.imedica.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imedica.min.js"></script> 
     <script type="text/javascript" src="js/custom-imedicajs.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $(".content-tabs").fadeIn();
+        });
+    </script>
