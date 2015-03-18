@@ -62,7 +62,7 @@
 					                data-easing="Power4.easeOut"
 					                data-endspeed="400"
 					                data-endeasing="Power1.easeIn"
-					                ><img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive">
+					                ><a href="<?php echo $fila["link"];?>"><img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive"></a>
 					            </div>
 					            
 					            <!-- LAYER NR. 5 -->
