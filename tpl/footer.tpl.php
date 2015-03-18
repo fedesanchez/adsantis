@@ -1,3 +1,6 @@
+<?php 
+    $menu=get_items_menu();
+?>
 <section class="complete-footer">
     <footer id="footer">
             
@@ -62,13 +65,12 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
                     <p class="col-xs-12 col-md-5 no-pad">Copyright 2014 ADS Olio | Diseñado por Disaigner</p>
                     <ul class="foot-menu col-xs-12 col-md-7 no-pad">
-                    <li><a href="#">Contacto</a></li> 
+                    <li><a href="contacto.php">Contacto</a></li> 
                     <li><a href="#">Coloración</a></li>    
-                    <li><a href="#">Donde encontrar</a></li>
+                    <li><a href="encontranos.php?tipo=puntos">Puntos de Venta</a></li>
+                    <li><a href="encontranos.php?tipo=salones">Salones</a></li>
                     <li><a href="#">Consejos</a></li>    
-                    <li><a href="#">Gran Consumo</a></li>    
-                    <li><a href="#">Profesional</a></li>    
-                    <li><a href="#">Home</a></li>                           
+                    <li><a href="./">Home</a></li>                           
                     
                     </ul>
                     </div>
