@@ -23,7 +23,7 @@
       <link rel="stylesheet" type="text/css" href="css/ie9.css" />
     <![endif]-->    
     <link rel="stylesheet" type="text/css" href="css/inline.min.css" /></head>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 <body>
 
     <?php include('tpl/header.tpl.php'); ?>
@@ -61,7 +61,7 @@
 
               <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 no-pad">
 
-                   <img class="img-responsive pull-left" alt="" src="<?php echo $linea['img']; ?>"/>
+                   <img class="img-responsive pull-left producto_grande" alt="" src="<?php echo $linea['img']; ?>"/>
 
               </div>
 

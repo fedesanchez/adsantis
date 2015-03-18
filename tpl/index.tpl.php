@@ -8,8 +8,8 @@
     <title>OLIO -> By Anna De Sanctis</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-    
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
     <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -24,11 +24,12 @@
     <link rel="stylesheet" type="text/css" href="css/slides.css" />
     <link rel="stylesheet" type="text/css" href="css/inline.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/opensans.css" />
 	
 
 </head>
     <body>
-    		<div id="loader-overlay"><img src="images/loader.gif" alt="Loading" /></div>
+    		<div id="loader-overlay"><img src="images/loader.gif" alt="Cargando" /></div>
 			<!-- separo el header para tenerlo en un solo archivo entonces si se modifica algo cambia en todas las pag -->
             <?php include('tpl/header.tpl.php'); ?>
             
@@ -76,11 +77,9 @@
 					                data-endeasing="Power1.easeIn"
 					                >
 					                <div class="inner">
-					                            <h3><?php echo $fila["desc_sup_prod"];?></h3>
-					                           <p>
-					                                <h1><?php echo $fila["nombre_producto"];?></h1>
-					                            </p>
-					                            <h3><?php echo $fila["desc_inf_prod"];?></h3>
+					                           <p class="slider_linea"><?php echo $fila["nombre_producto"];?></p>
+					                           <p class="slider_sup"><?php echo $fila["desc_sup_prod"];?></p>
+					                           <p class="slider_inf"><?php echo $fila["desc_inf_prod"];?></p>
 					                            
 					                </div>
 					                <!--<img src="images/new-slider/arginina.png" alt="" class="img-responsive">-->

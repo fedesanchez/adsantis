@@ -8,6 +8,10 @@
     margin-left: 33%;
 }
 
+.producto_grande{
+	max-height: 419px !important;
+}
+
 #second .bg img{
 max-width: 449px;
 max-height: 507px;	
@@ -15,8 +19,30 @@ max-height: 507px;
 
 .novedad{
 	max-height: 200px;
+	margin-left: 27%;
 }
 
 .sin_imagen{
  min-height: 200px;
+}
+
+.slider_linea{
+	font-family: 'Open Sans', sans-serif;
+	color: white;	
+	font-weight:300;
+	font-size: 20px;
+}
+
+.slider_sup{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-weight:800;
+	font-size: 40px;
+}
+
+.slider_inf{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-weight:400;
+	font-size: 18px;
 }
