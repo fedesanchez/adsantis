@@ -37,10 +37,17 @@
                          <!--Foot widget-->
                         <div class="col-xs-12 col-sm-6 col-md-3 recent-tweet-foot foot-widget">
                             <div class="foot-widget-title">Ultimos Tweets</div>
-                            <ul>
-                                <li>Integer iaculis egestas odio. eget: <b>t.co/RTSoououIdg</b><br /><span class="event-date">hace 3 dias</span></li>
-                                <li>Integer iaculis egestas odio. eget: <b>t.co/RTSoououIdg</b><br /><span class="event-date">hace 7 dias</span></li>
-                            </ul>
+                                <a class="twitter-timeline" href="https://twitter.com/olioarg" 
+                                data-widget-id="583827786453929984"
+                                 width="400"
+                                height="200"
+                                data-chrome="nofooter noheader noborders transparent noscrollbar">
+                                
+                            </a>
+                            
+                            
+
+                            
                         </div>
                         
                         <!--Foot widget-->
@@ -105,4 +112,7 @@
         $( document ).ready(function() {
             $(".content-tabs").fadeIn();
         });
+    </script>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
     </script>
