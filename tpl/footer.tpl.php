@@ -1,5 +1,5 @@
 <?php 
-    $menu=get_items_menu();
+    if(!isset($novedades))$novedades=get_novedades();
 ?>
 <section class="complete-footer">
     <footer id="footer">
@@ -11,10 +11,9 @@
                         <a href="#"><div class="foot-logo col-xs-12 no-pad"></div></a>
                         
                         <address class="foot-address">
-                            <div class="col-xs-12 no-pad"><i class="icon-globe address-icons"></i>Anna de Sanctis OLIO <br />Calle Lorem <br />Cap Fed, Argentina</div>
-                            <div class="col-xs-12 no-pad"><i class="icon-phone2 address-icons"></i>+123 455 755</div>
-                            <div class="col-xs-12 no-pad"><i class="icon-file address-icons"></i>+123 555 755</div>
-                            <div class="col-xs-12 no-pad"><i class="icon-mail address-icons"></i>contact@olio.com</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-globe address-icons"></i>Anna de Sanctis <br />California 2082, Barracas <br /> Capital Federal</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-phone2 address-icons"></i>(011) 4301 8725</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-mail address-icons"></i>info@annadesanctis.com.ar</div>
                         </address>
                         </div>
                         
@@ -22,9 +21,16 @@
                         <div class="col-xs-12 col-sm-6 col-md-3 recent-post-foot foot-widget">
                             <div class="foot-widget-title">Lanzamientos recientes</div>
                             <ul>
-                                <li><a href="#">Consecte tur adipiscing elit ut eunt<br /><span class="event-date">hace 3 dias</span></a></li>
-                                <li><a href="#">Fusce vel tempus augue nunc<br /><span class="event-date">hace 3 dias</span></a></li>
-                                <li><a href="#">Lorem nulla, vitae eleifend leo tincidunt<br /><span class="event-date">hace 3 dias</span></a></li>
+                                <?php
+                                    foreach ($novedades as $novedad) {
+                                ?>
+                                <li>
+                                    <a href="./producto.php?id=<?php echo $novedad['id_linea']; ?>">
+                                    <?php echo $novedad['nombre']; ?><br />
+                                    
+                                    </a>
+                                </li>
+                                <?php } ?>
                             </ul>
                         </div>
                         
@@ -46,8 +52,7 @@
                             <div class="social-wrap">
                                 <ul>
                                 <li><a href="#"><i class="icon-facebook foot-social-icon" id="face-foot" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a></li>
-                                <li><a href="#"><i class="icon-social-twitter foot-social-icon" id="tweet-foot" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a></li>
-                                <li><a href="#"><i class="icon-google-plus foot-social-icon" id="gplus-foot" data-toggle="tooltip" data-placement="bottom" title="Google+"></i></a></li>
+                                <li><a href="https://twitter.com/olioarg" target="_blank"><i class="icon-social-twitter foot-social-icon" id="tweet-foot" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a></li>                                
                                 </ul>
                             </div>
                         </div>

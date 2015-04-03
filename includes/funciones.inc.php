@@ -24,4 +24,16 @@ function get_items_menu(){
 
 }
 
+function get_novedades(){
+	include('database.inc.php');//chanchada
+	$sql = 'SELECT * FROM linea where novedad=1 ORDER BY RAND() LIMIT 4;';
+	$tmp = mysql_query($sql, $db) or die(mysql_error());
+	while ($novedad = mysql_fetch_array($tmp, MYSQL_ASSOC)) {
+ 		$novedades[]=$novedad;
+	}
+
+	return $novedades;
+
+}
+
 ?>

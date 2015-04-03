@@ -42,7 +42,7 @@
                 <div class="bread-crumb pull-right">
                 <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="encontranos.php?tipo=<?=$tipo;?>"><?php echo $tit;?></a></li>
+                <li><a href="encontranos.php?tipo=<?php echo $_GET['tipo'];?>"><?php echo $tit;?></a></li>
                 </ul>
                 </div>
             </div>
