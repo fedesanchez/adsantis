@@ -65,3 +65,15 @@ max-height: 507px;
         margin: -7vh 0 10px !important;
     }
 }
+
+.iconlist-wrap li{
+	width: 100% !important;
+}
+
+.iconlist-wrap .icon-list-icons{
+	margin: 0px !important;
+}
+
+.iconlist-title{
+	margin-top: 10px !important;
+}

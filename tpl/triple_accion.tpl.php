@@ -22,27 +22,27 @@
                                 	<div class="iconlist-content">
                                     	
                                     	<div class="iconlist-title"><?php echo $sliderta['tit_prop_1'] ;?></div>
-                                        <p class="iconlist-text"><?php echo $sliderta['desc_prop_1'] ;?> </p>
+                                        <p class="iconlist-text"><?php //echo $sliderta['desc_prop_1'] ;?> </p>
                                     </div>
                                     
                                 	</li>
-                                    
+                                    <br></br>
                                     <li class="notViewed wow fadeInDown" data-wow-delay="0.5s" data-wow-offset="60">
                                 	<i class="fa fa-check-square icon-list-icons"></i>
                                 	<div class="iconlist-content">
                                     	
                                     	<div class="iconlist-title"><?php echo $sliderta['tit_prop_2'] ;?></div>
-                                        <p class="iconlist-text"><?php echo $sliderta['desc_prop_2'] ;?></p>
+                                        <p class="iconlist-text"><?php //echo $sliderta['desc_prop_2'] ;?></p>
                                     </div>
                                    
                                 	</li>
-                                    
+                                    <br></br>
                                     <li class="notViewed wow fadeInDown" data-wow-delay="0.5s" data-wow-offset="70">
                                 	<i class="fa fa-check-square icon-list-icons"></i>
                                 	<div class="iconlist-content">
                                     	
                                     	<div class="iconlist-title"><?php echo $sliderta['tit_prop_3'] ;?></div>
-                                        <p class="iconlist-text"><?php echo $sliderta['desc_prop_3'] ;?></p>
+                                        <p class="iconlist-text"><?php //echo $sliderta['desc_prop_3'] ;?></p>
                                     </div>
                                 	</li>
 
