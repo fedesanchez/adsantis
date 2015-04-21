@@ -33,7 +33,7 @@
     <!--Mid Content Start-->
     
     
-     <div class="about-intro-wrap pull-left">
+     <div class="about-intro-wrap pull-left content-tabs">
      
              <div class="bread-crumb-wrap ibc-wrap-1">
                 <div class="container">
