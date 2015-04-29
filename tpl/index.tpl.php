@@ -99,7 +99,7 @@
     
        <?php include('tpl/triple_accion.tpl.php'); ?>     
     
-       <?php include('tpl/testimonios.tpl.php'); ?>     
+       <?php //include('tpl/testimonios.tpl.php'); ?>     
             
                <!--Footer Start-->
 		</div><!--de complete-content -->
