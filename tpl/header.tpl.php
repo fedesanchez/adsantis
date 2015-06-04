@@ -87,7 +87,7 @@
                                   </ul>
                             </li>
 
-                            <li class="dropdown"><a href="#">Coloracion<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="coloracion.php">Coloración<b class="icon-angle-down"></b></a>
                             </li>
                             
                             <li class="dropdown"><a href="contacto.php">Contacto<b class="icon-angle-down"></b></a>
