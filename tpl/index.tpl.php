@@ -52,6 +52,7 @@
 					            <!-- LAYERS -->
 
 					            <!-- LAYER NR. 1 -->
+					            <a href="<?php echo $fila["link"];?>">
 					            <div class="tp-caption lfb stl imed-sl1"
 					                data-x="left"
 					                data-y="bottom"
@@ -61,8 +62,9 @@
 					                data-easing="Power4.easeOut"
 					                data-endspeed="400"
 					                data-endeasing="Power1.easeIn"
-					                ><a href="<?php echo $fila["link"];?>"><img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive"></a>
+					                ><img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive">
 					            </div>
+					            </a>
 					            
 					            <!-- LAYER NR. 5 -->
 					            <div class="tp-caption bluebg-t1 sfr skewtoright imed-sl1"

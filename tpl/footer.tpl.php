@@ -12,7 +12,7 @@
                         
                         <address class="foot-address">
                             <div class="col-xs-12 no-pad"><i class="icon-globe address-icons"></i>Anna de Sanctis <br />California 2082, Barracas <br /> Capital Federal</div>
-                            <div class="col-xs-12 no-pad"><i class="icon-phone2 address-icons"></i>(011) 4301 8725</div>
+                            <div class="col-xs-12 no-pad"><i class="icon-phone2 address-icons"></i>(011) 4301 8752</div>
                             <div class="col-xs-12 no-pad"><i class="icon-mail address-icons"></i>info@annadesanctis.com.ar</div>
                         </address>
                         </div>

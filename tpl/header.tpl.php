@@ -24,7 +24,7 @@
                                 <li><a href="https://twitter.com/olioarg" target="_blank"><i class="icon-social-twitter head-social-icon" id="tweet-head" data-original-title="" title=""></i></a></li>                                
                                 </ul>
                             </div>                            
-                            <div class="top-info-contact pull-right col-md-6">(011) 4301 8725  |    info@annadesanctis.com.ar  <div id="search" class="fa fa-search search-head"></div>
+                            <div class="top-info-contact pull-right col-md-6">(011) 4301 8752  |    info@annadesanctis.com.ar  <div id="search" class="fa fa-search search-head"></div>
                             </div>                      
                         </div>
                     </div><!--Topbar-info-close-->
