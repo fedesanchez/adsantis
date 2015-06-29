@@ -51,7 +51,7 @@
 					            <img src="<?php echo $fila["img_fondo"];?>"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 					            <!-- LAYERS -->
 
-					            <!-- LAYER NR. 1 -->
+					            <!-- LAYER NR. 1 -->					           
 					            <a href="<?php echo $fila["link"];?>">
 					            <div class="tp-caption lfb stl imed-sl1"
 					                data-x="left"
@@ -62,11 +62,13 @@
 					                data-easing="Power4.easeOut"
 					                data-endspeed="400"
 					                data-endeasing="Power1.easeIn"
-					                ><img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive">
+					                ><?php if(strlen($fila["img_producto"])>1) {?>
+					            	<img src="<?php echo $fila["img_producto"];?>" alt="" class="img-responsive">
+					            	<?php } ?>
 					            </div>
 					            </a>
 					            
-					            <!-- LAYER NR. 5 -->
+					            <!-- LAYER NR. 5 -->					            
 					            <div class="tp-caption bluebg-t1 sfr skewtoright imed-sl1"
 					                data-x="right"
 					                data-y="115"
@@ -77,14 +79,17 @@
 					                data-endspeed="400"
 					                data-endeasing="Power1.easeIn"
 					                >
+					                <a href="<?php echo $fila["link"];?>">
 					                <div class="inner">
 					                           <p class="slider_linea"><?php echo $fila["nombre_producto"];?></p>
 					                           <p class="slider_sup"><?php echo $fila["desc_sup_prod"];?></p>
 					                           <p class="slider_inf"><?php echo $fila["desc_inf_prod"];?></p>
 					                            
 					                </div>
+					                </a>
 					                <!--<img src="images/new-slider/arginina.png" alt="" class="img-responsive">-->
 					            </div>
+					            
 					     </li>
 					    <?php } ?>
 					    </ul>

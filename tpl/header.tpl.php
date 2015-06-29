@@ -7,33 +7,31 @@
             <div class="header-bg">
             
             <div id="search-overlay">
-            <div class="container">
-        						<div id="close">X</div>
-        	
-        						<input id="hidden-search" type="text" placeholder="Start Typing..." autofocus autocomplete="off"  /> <!--hidden input the user types into-->
-        						<input id="display-search" type="text" placeholder="Start Typing..." autofocus autocomplete="off" /> <!--mirrored input that shows the actual input value-->
-        					</div></div>
+                <div class="container">
+            		<div id="close">X</div>
+                	   <input id="hidden-search" type="text" placeholder="Buscar..." autofocus autocomplete="off"  /> <!--hidden input the user types into-->
+            		  
+            	</div> 
+            </div>
                
                 	
                     <!--Topbar-->
-                    <div class="topbar-info no-pad">                    
-                        <div class="container">                     
-                            <div class="social-wrap-head col-md-2 no-pad">
-                                <ul>
-                                <li><a href="#"><i class="icon-facebook head-social-icon" id="face-head" data-original-title="" title=""></i></a></li>
-                                <li><a href="https://twitter.com/olioarg" target="_blank"><i class="icon-social-twitter head-social-icon" id="tweet-head" data-original-title="" title=""></i></a></li>                                
-                                </ul>
-                            </div>                            
-                            <div class="top-info-contact pull-right col-md-6">(011) 4301 8752  |    info@annadesanctis.com.ar  <div id="search" class="fa fa-search search-head"></div>
-                            </div>                      
-                        </div>
-                    </div><!--Topbar-info-close-->
+            <div class="topbar-info no-pad">                    
+                <div class="container">                     
+                    <div class="social-wrap-head col-md-2 no-pad">
+                        <ul>
+                        <li><a href="#"><i class="icon-facebook head-social-icon" id="face-head" data-original-title="" title=""></i></a></li>
+                        <li><a href="https://twitter.com/olioarg" target="_blank"><i class="icon-social-twitter head-social-icon" id="tweet-head" data-original-title="" title=""></i></a></li>                                
+                        </ul>
+                    </div>                            
+                    <div class="top-info-contact pull-right col-md-6">(011) 4301 8752  |    info@annadesanctis.com.ar  <div id="search" class="fa fa-search search-head"></div>
+                    </div>                      
+                </div>
+            </div><!--Topbar-info-close-->
                     
                     
-                    
-                    
-                    
-                    <div id="headerstic">
+                                                            
+            <div id="headerstic">
                     
                     <div class=" top-bar container">
                     	<div class="row">
@@ -115,11 +113,3 @@
               </div>
             </header>
 
-            <script>
-            (function(w,d,s,g,js,fs){
-              g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
-              js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
-              js.src='https://apis.google.com/js/platform.js';
-              fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
-            }(window,document,'script'));
-            </script>

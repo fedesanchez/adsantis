@@ -52,9 +52,6 @@
                         
                         <!--Foot widget-->
                         <div class="col-xs-12 col-sm-6 col-md-3 foot-widget">
-                            <div class="foot-widget-title">newsletter</div>
-                            <p>Ipsum dolor sit amet, teft consecte tur.</p>
-                            <div class="news-subscribe"><input type="text" class="news-tb" placeholder="Correo Electronico" /><button class="news-button">Suscribirse</button></div>
                             <div class="foot-widget-title">social media</div>
                             <div class="social-wrap">
                                 <ul>
@@ -104,14 +101,25 @@
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
     <script type="text/javascript" src="js/jquery.sticky.min.js"></script>
+    
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.imedica.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.imedica.min.js"></script>
     <script type="text/javascript" src="js/custom-imedicajs.min.js"></script>
+    
     <script type="text/javascript">
         $( document ).ready(function() {
             $(".content-tabs").fadeIn();
+
+            //esto va en el footer asi pisa lo del template
+            $("#hidden-search").keydown(function(e){
+                var currentQuery = $("#hidden-search").val(); //get the current value of the search input
+                if(e.keyCode == 13){ //if the user hits backspace...                
+                    document.location.href="http://annadesanctis.com.ar/nuevo/productos.php?q="+currentQuery;                       
+                }
+            });
         });
+
     </script>
     <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
