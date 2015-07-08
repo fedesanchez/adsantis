@@ -75,8 +75,8 @@
                         <div class="tab-pane fade fade-slow in active" id="all-doc">                                                                      
                       
                          <?php
-                          while ($linea = mysql_fetch_array($lineas, MYSQL_ASSOC)) {
-
+                         foreach ($lineas as $linea) {
+                          
                           ?>
                          <!--Doc intro-->
                         <div class="doctor-box col-md-4 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0.5s" data-wow-offset="200">

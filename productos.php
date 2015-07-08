@@ -24,7 +24,7 @@ if(isset($_GET['categoria'])){
 		
 }
 
-$lineas = mysql_query($sql, $db) or die(mysql_error());
+$lineas = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
 include('tpl/productos.tpl.php');
 

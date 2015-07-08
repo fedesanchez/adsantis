@@ -3,10 +3,10 @@
 function get_items_menu(){
 	include('database.inc.php');//chanchada
 	$sql = 'SELECT * FROM categoria ;';
-	$result = mysql_query($sql, $db) or die(mysql_error());
+	$result = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 	$arr_prof = array();
 	$arr_cons = array();
-		while ($row = mysql_fetch_assoc($result)) {		    
+		foreach ($result as $row) {		    
 		   $item =explode('-', $row['nombre']);
 		   $profesional=strpos(strtolower($item[0]), 'profesional');
 		   $consumo=strpos(strtolower($item[0]), 'consumo');
@@ -27,11 +27,8 @@ function get_items_menu(){
 function get_novedades(){
 	include('database.inc.php');//chanchada
 	$sql = 'SELECT * FROM linea where novedad=1 ORDER BY RAND() LIMIT 4;';
-	$tmp = mysql_query($sql, $db) or die(mysql_error());
-	while ($novedad = mysql_fetch_array($tmp, MYSQL_ASSOC)) {
- 		$novedades[]=$novedad;
-	}
-
+	$novedades = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+	
 	return $novedades;
 
 }

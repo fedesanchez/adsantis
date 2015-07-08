@@ -63,21 +63,21 @@
                         <div class="contact-widget-box col-md-3 col-lg-3 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="0.5s" data-wow-offset="150">
                             <div class="fold-wrap"><i class="icon-globe cw-icon"></i></div>
                             <div class="contact-widget-title">Direccion</div>
-                            <p>Calle Lorem, Cap Fed, Argentina</p>
+                            <p>California 2082, Capital Federal</p>
                         </div>
                         
                         <!--contact-widget-box-->
                         <div class="contact-widget-box col-md-3 col-lg-3 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="0.8s" data-wow-offset="150">
                             <div class="fold-wrap"><i class="icon-phone2 cw-icon"></i></div>
                             <div class="contact-widget-title">Telefono</div>
-                            <p>Nro: +123 455 755</p>
+                            <p>(011) 4301 8752</p>
                         </div>
                         
                         <!--contact-widget-box-->
                         <div class="contact-widget-box col-md-3 col-lg-3 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="1.1s" data-wow-offset="150">
                             <div class="fold-wrap"><i class="icon-mail cw-icon"></i></div>
                             <div class="contact-widget-title">Email</div>
-                            <p><a href="mailto:contact@imedica.com">contact@olio.com</a></p>
+                            <p><a href="mailto:info@annadesanctis.com.ar">info@annadesanctis.com.ar</a></p>
                         </div>
                         
                         <!--contact-widget-box-->

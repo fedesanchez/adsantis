@@ -15,12 +15,8 @@ if($_GET['tipo']=='salones'){
 
 
 $sql = "SELECT * FROM $tabla ;";
-$tmp = mysql_query($sql, $db) or die(mysql_error());
 
-$arrPuntos = array();
-while ($item = mysql_fetch_array($tmp, MYSQL_ASSOC)) {
-  array_push($arrPuntos, $item);
-}
+$arrPuntos=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
 include('tpl/mapa.tpl.php');
 ?>

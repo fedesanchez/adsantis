@@ -41,8 +41,8 @@
             <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
              
 					    <?php
-					    while ($fila = mysql_fetch_array($slider, MYSQL_ASSOC)) {
-
+					    foreach ($slider as $fila) {
+					    	
 					    ?>
 
 					     <li data-transition="papercut" data-slotamount="7">

@@ -75,7 +75,7 @@
                                 </ul>
                             </li>
                             
-                            <li class="dropdown"><a href="#" >Consejos<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="./consejos.php" >Consejos<b class="icon-angle-down"></b></a>
                             </li>
 
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i>Encontranos<b class="icon-angle-down"></b></a>
