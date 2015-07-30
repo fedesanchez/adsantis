@@ -55,29 +55,30 @@
         
      
              <!-- Main Content -->
+
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <?php foreach ($consejos as $consejo) { ?>
-                <div class="post-preview">
-                    <a href="#">
-                        <h2 class="post-title">
-                            <?=$consejo['titulo'];?>
-                        </h2>
-                        <p class="post-meta">
-                            <?=$consejo['html'];?>
-                        </p>
-                        
-                    </a>
-                    
-                </div>
-                <hr>
-                <?php } ?>
-                
-                <!-- Pager -->
-                
-            </div>
+        
+   	<?php foreach ($consejos as $consejo) { ?>
+
+    	<div class="col-sm-12" id="featured">   
+          <h3><?=$consejo['titulo'];?></h3>
+           
         </div>
+                        
+        <!--/top story-->
+        <div class="row">    
+          <div class="col-sm-10">
+            <div class="page-header text-muted">
+          		<?=$consejo['html'];?>
+          	</div>
+
+          </div>
+          <div class="col-sm-2">
+            </div> 
+        </div>
+        <?php } ?>
+
+        
     </div>
     
     </section>

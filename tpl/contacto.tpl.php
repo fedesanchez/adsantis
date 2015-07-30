@@ -80,12 +80,7 @@
                             <p><a href="mailto:info@annadesanctis.com.ar">info@annadesanctis.com.ar</a></p>
                         </div>
                         
-                        <!--contact-widget-box-->
-                        <div class="contact-widget-box col-md-3 col-lg-3 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="1.4s" data-wow-offset="150">
-                            <div class="fold-wrap"><i class="fa fa-comments-o cw-icon"></i></div>
-                            <div class="contact-widget-title">Soporte</div>
-                            <p>Soporte empresarial 24x7</p>
-                        </div>
+                        
                         
                     </div><!--Contact widgets end-->
                     
