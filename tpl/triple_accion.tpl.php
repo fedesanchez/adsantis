@@ -66,10 +66,10 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 pull-right"> 
                         <div class="purchase-strip-blue pull-right col-sm-12 col-md-12 col-xs-12 pull-left notViewed wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="150">
-                        <div class="purchase-strip-text">Para ver mas sobre <span class="ipurchase-strip-text">este producto</span> ---></div>
+                        <div class="purchase-strip-text"><?=($_SESSION['lang']=='en')?'To see more about':'Para ver mas sobre';?> <span class="ipurchase-strip-text"><?=($_SESSION['lang']=='en')?'this product':'este producto';?></span> ---></div>
                         <div class="color-4">
                             <p class="ipurchase-paragraph">
-                               <a href="<?php echo $sliderta['link'] ;?>"> <button class="btn btn-4 btn-4a notViewed wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="150">CLICK AQUI</button></a>
+                               <a href="<?php echo $sliderta['link'] ;?>"> <button class="btn btn-4 btn-4a notViewed wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="150">CLICK <?=($_SESSION['lang']=='en')?'HERE':'AQUI';?></button></a>
                             </p>
                         </div>
                         

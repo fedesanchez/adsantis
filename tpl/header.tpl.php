@@ -1,6 +1,11 @@
 <?php 
     include('includes/funciones.inc.php');
     $menu=get_items_menu();
+    if($_SESSION['lang']=='en'){
+        $menu['profesional']=traducir_menu($menu['profesional'],'Profesional -');
+        $menu['gran_consumo']=traducir_menu($menu['gran_consumo'],'Gran Consumo -');
+
+    }
 ?>
 <header>
             
@@ -55,7 +60,7 @@
                             <li class="active"><a href="./"><i class="icon-home"></i>Home</a></li>
 
                             
-                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Profesional<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=($_SESSION['lang']=='en')?'Professional':'Profesional';?><b class="icon-angle-down"></b></a>
                                 <ul class="dropdown-menu">
                                     <?php foreach ($menu['profesional'] as $key => $value) { ?>
                                     <li>
@@ -65,7 +70,7 @@
                                 </ul>
                             </li>
                             
-                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gran Consumo<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=($_SESSION['lang']=='en')?'FMCG':'Gran Consumo';?><b class="icon-angle-down"></b></a>
                                 <ul class="dropdown-menu">
                                     <?php foreach ($menu['gran_consumo'] as $key => $value) { ?>
                                     <li>
@@ -75,20 +80,20 @@
                                 </ul>
                             </li>
                             
-                            <li class="dropdown"><a href="./consejos.php" >Consejos<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="./consejos.php" ><?=($_SESSION['lang']=='en')?'Tips':'Consejos';?><b class="icon-angle-down"></b></a>
                             </li>
 
-                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i>Encontranos<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i><?=($_SESSION['lang']=='en')?'Find Us':'Encontranos';?><b class="icon-angle-down"></b></a>
                             <ul class="dropdown-menu">
-                                    <li><a href="encontranos.php?tipo=puntos">Puntos de venta</a></li>
-                                    <li><a href="encontranos.php?tipo=salones">Salones</a></li>
+                                    <li><a href="encontranos.php?tipo=puntos"><?=($_SESSION['lang']=='en')?'Dealers':'Distribudores';?></a></li>
+                                    <li><a href="encontranos.php?tipo=salones"><?=($_SESSION['lang']=='en')?'Saloon':'Salones';?></a></li>
                                   </ul>
                             </li>
 
-                            <li class="dropdown"><a href="coloracion.php">Coloración<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="coloracion.php"><?=($_SESSION['lang']=='en')?'Hair Coloring':'Coloración';?><b class="icon-angle-down"></b></a>
                             </li>
                             
-                            <li class="dropdown"><a href="contacto.php">Contacto<b class="icon-angle-down"></b></a>
+                            <li class="dropdown"><a href="contacto.php"><?=($_SESSION['lang']=='en')?'Contact':'Contacto';?><b class="icon-angle-down"></b></a>
                             
                             </li>
                             

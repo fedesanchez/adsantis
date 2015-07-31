@@ -1,5 +1,5 @@
 <?php
-
+if(!function_exists('traducir'))include('includes/traducciones.inc.php');
 function get_items_menu(){
 	include('database.inc.php');//chanchada
 	$sql = 'SELECT * FROM categoria ;';
@@ -20,6 +20,8 @@ function get_items_menu(){
 		   }
 	}
 
+	
+
 	return(array('profesional' => $arr_prof, 'gran_consumo'=>$arr_cons));
 
 }
@@ -29,8 +31,12 @@ function get_novedades(){
 	$sql = 'SELECT * FROM linea where novedad=1 ORDER BY RAND() LIMIT 4;';
 	$novedades = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 	
+	if($_SESSION['lang']=='en'){
+		$novedades=traducir($novedades);
+	}
 	return $novedades;
 
 }
+
 
 ?>

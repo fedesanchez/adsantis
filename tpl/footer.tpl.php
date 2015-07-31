@@ -19,7 +19,7 @@
                         
                         <!--Foot widget-->
                         <div class="col-xs-12 col-sm-6 col-md-3 recent-post-foot foot-widget">
-                            <div class="foot-widget-title">Lanzamientos recientes</div>
+                            <div class="foot-widget-title"><?=($_SESSION['lang']=='en')?'Latest releases':'Lanzamientos recientes';?></div>
                             <ul>
                                 <?php
                                     foreach ($novedades as $novedad) {
@@ -36,7 +36,7 @@
                         
                          <!--Foot widget-->
                         <div class="col-xs-12 col-sm-6 col-md-3 recent-tweet-foot foot-widget">
-                            <div class="foot-widget-title">Ultimos Tweets</div>
+                            <div class="foot-widget-title"><?=($_SESSION['lang']=='en')?'Latest':'Ultimos';?> Tweets</div>
                                 <a class="twitter-timeline" href="https://twitter.com/olioarg" 
                                 data-widget-id="583827786453929984"
                                  width="400"
@@ -72,13 +72,13 @@
                 <div class="row">
                     <!--Foot widget-->
                     <div class="col-xs-12 col-sm-12 col-md-12 foot-widget-bottom">
-                    <p class="col-xs-12 col-md-5 no-pad">Copyright 2014 ADS Olio | Diseñado por Disaigner</p>
+                    <p class="col-xs-12 col-md-5 no-pad">Copyright 2014 ADS Olio | <?=($_SESSION['lang']=='en')?'Designed by Disaigner':'Diseñado por Disaigner';?></p>
                     <ul class="foot-menu col-xs-12 col-md-7 no-pad">
-                    <li><a href="contacto.php">Contacto</a></li> 
-                    <li><a href="#">Coloración</a></li>    
-                    <li><a href="encontranos.php?tipo=puntos">Puntos de Venta</a></li>
-                    <li><a href="encontranos.php?tipo=salones">Salones</a></li>
-                    <li><a href="#">Consejos</a></li>    
+                    <li><a href="contacto.php"><?=($_SESSION['lang']=='en')?'Contact':'Contacto';?></a></li> 
+                    <li><a href="#"><?=($_SESSION['lang']=='en')?'Hair Coloring':'Coloración';?></a></li>    
+                    <li><a href="encontranos.php?tipo=puntos"><?=($_SESSION['lang']=='en')?'Dealers':'Distribuidores';?></a></li>
+                    <li><a href="encontranos.php?tipo=salones"><?=($_SESSION['lang']=='en')?'Saloons':'Salones';?></a></li>
+                    <li><a href="#"><?=($_SESSION['lang']=='en')?'Tips':'Consejos';?></a></li>    
                     <li><a href="./">Home</a></li>                           
                     
                     </ul>

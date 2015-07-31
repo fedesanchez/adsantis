@@ -1,7 +1,7 @@
 <!--Icon Boxes 1-->
             <div class="container iflip">
                 <div class="row">
-                <div class="col-md-12 col-xs-12 col-sm-12 pull-left subtitle ibg-transparent wow flipInX" data-wow-delay="0.9s" data-wow-offset="10">Novedades</div>                
+                <div class="col-md-12 col-xs-12 col-sm-12 pull-left subtitle ibg-transparent wow flipInX" data-wow-delay="0.9s" data-wow-offset="10"><?=($_SESSION['lang']=='en')?'Latest Releases':'Novedades';?></div>                
                     <?php
                         $novedades=get_novedades();
                         foreach ($novedades as $novedad) { 
@@ -22,7 +22,7 @@
                                         <div class="ifb-face ifb-back flip-backface">
                                             <h3><?php echo $novedad['nombre']; ?></h3>
                                             <p><?php echo $novedad['resumen']; ?>.</p>
-                                            <div class="flip_link"><a href="./producto.php?id=<?php echo $novedad['id_linea']; ?>" class="flip-read-more">Ver</a></div>
+                                            <div class="flip_link"><a href="./producto.php?id=<?php echo $novedad['id_linea']; ?>" class="flip-read-more"><?=($_SESSION['lang']=='en')?'Go':'Ver';?></a></div>
                                         </div><!-- END .back -->
                                         
                                    </div> <!-- ifb-flip-box -->
