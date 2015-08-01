@@ -2,6 +2,9 @@
 //TODO: hacerlo bien, no esta chanchada
 include('includes/database.inc.php');
 include('includes/traducciones.inc.php');
+$path=realpath(dirname($_SERVER['DOCUMENT_ROOT'])).'/php_sessions';
+ini_set('session.save_path',$path);
+session_start();
 if($_GET['lang']){
 	$_SESSION['lang']=$_GET['lang'];
 }

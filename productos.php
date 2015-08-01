@@ -2,6 +2,10 @@
 //if(!isset($_GET['categoria']))die("No tiene Permisos");
 //TODO: hacerlo bien, no esta chanchada
 include('includes/database.inc.php');
+include('includes/traducciones.inc.php');
+$path=realpath(dirname($_SERVER['DOCUMENT_ROOT'])).'/php_sessions';
+ini_set('session.save_path',$path);
+session_start();
 
 if(isset($_GET['categoria'])){
 	$id_categoria=$_GET['categoria'];
@@ -25,7 +29,9 @@ if(isset($_GET['categoria'])){
 }
 
 $lineas = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
-
+if($_SESSION['lang']=='en'){
+	$lineas=traducir($lineas);
+}
 include('tpl/productos.tpl.php');
 
 ?>
