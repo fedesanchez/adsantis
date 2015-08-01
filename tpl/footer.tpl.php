@@ -55,7 +55,7 @@
                             <div class="foot-widget-title">social media</div>
                             <div class="social-wrap">
                                 <ul>
-                                <li><a href="#"><i class="icon-facebook foot-social-icon" id="face-foot" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a></li>
+                                <li><a href="http://www/facebook.com/olioarg" target="_blank"><i class="icon-facebook foot-social-icon" id="face-foot" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a></li>
                                 <li><a href="https://twitter.com/olioarg" target="_blank"><i class="icon-social-twitter foot-social-icon" id="tweet-foot" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a></li>                                
                                 </ul>
                             </div>

@@ -14,7 +14,7 @@
             <div id="search-overlay">
                 <div class="container">
             		<div id="close">X</div>
-                	   <input id="hidden-search" type="text" placeholder="Buscar..." autofocus autocomplete="off"  /> <!--hidden input the user types into-->
+                	   <input id="hidden-search" type="text" placeholder=<?=($_SESSION['lang']=='en')?"Search...":"Buscar...";?> autofocus autocomplete="off"  /> <!--hidden input the user types into-->
             		  
             	</div> 
             </div>
@@ -25,7 +25,7 @@
                 <div class="container">                     
                     <div class="social-wrap-head col-md-2 no-pad">
                         <ul>
-                        <li><a href="#"><i class="icon-facebook head-social-icon" id="face-head" data-original-title="" title=""></i></a></li>
+                        <li><a href="http://www.facebook.com/olioarg" target="_blank"><i class="icon-facebook head-social-icon" id="face-head" data-original-title="" title=""></i></a></li>
                         <li><a href="https://twitter.com/olioarg" target="_blank"><i class="icon-social-twitter head-social-icon" id="tweet-head" data-original-title="" title=""></i></a></li>                                
                         </ul>
                     </div>                            
@@ -86,7 +86,6 @@
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i><?=($_SESSION['lang']=='en')?'Find Us':'Encontranos';?><b class="icon-angle-down"></b></a>
                             <ul class="dropdown-menu">
                                     <li><a href="encontranos.php?tipo=puntos"><?=($_SESSION['lang']=='en')?'Dealers':'Distribudores';?></a></li>
-                                    <li><a href="encontranos.php?tipo=salones"><?=($_SESSION['lang']=='en')?'Saloon':'Salones';?></a></li>
                                   </ul>
                             </li>
 
