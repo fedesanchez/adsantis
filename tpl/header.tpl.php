@@ -30,6 +30,11 @@
                         </ul>
                     </div>                            
                     <div class="top-info-contact pull-right col-md-6">(011) 4301 8752  |    info@annadesanctis.com.ar  <div id="search" class="fa fa-search search-head"></div>
+                   <?php if($_SESSION['lang']=='en'){ ?>
+                    <a href="/?lang=es"  style="padding-left:20px">Versión Español</a>
+                    <?php }else{ ?>
+                        <a href="/?lang=en"  style="padding-left:20px">English Version</a>
+                     <?php } ?>   
                     </div>                      
                 </div>
             </div><!--Topbar-info-close-->
