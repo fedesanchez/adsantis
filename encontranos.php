@@ -22,6 +22,10 @@ $sql = "SELECT * FROM $tabla ;";
 
 $arrPuntos=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
+if($_SESSION['lang']=='en'){
+	$tit="Dealers";
+	// sacamos salones al final
+}
 
 include('tpl/mapa.tpl.php');
 ?>

@@ -38,11 +38,11 @@
         <div class="container">
     <!--Title / Beadcrumb-->
             <div class="inner-page-title-wrap col-xs-12 col-md-12 col-sm-12">
-                <div class="bread-heading"><h1>Coloracíon</h1></div>
+                <div class="bread-heading"><h1><?=($_SESSION['lang']=='en')?"Hair Coloring":"Coloracíon";?></h1></div>
                 <div class="bread-crumb pull-right">
                 <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="#">Coloración</a></li>
+                <li><a href="#"><?=($_SESSION['lang']=='en')?"Hair Coloring":"Coloracíon";?></a></li>
                 </ul>
                 </div>
             </div>
