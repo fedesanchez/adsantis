@@ -22,9 +22,11 @@ function traducir($data){
 	
 }
 
+// cambie las ruttas de admin/libs/translate/en.php para que ande en el server
+// en localhost deberia ser ../admin.....
 
 function traducir_triple_accion($data){
-	$lang=include('../admin/libs/translate/en.php');
+	$lang=include('admin/libs/translate/en.php');
 	if(!$lang){
 		error_log("no incluyo el archivo con traducciones");		
 		return $data;
@@ -45,7 +47,7 @@ function traducir_triple_accion($data){
 }
 
 function traducir_menu($data,$tipo){
-	$lang=include('../admin/libs/translate/en.php');
+	$lang=include('admin/libs/translate/en.php');
 	if(!$lang){
 		error_log("no incluyo el archivo con traducciones");		
 		return $data;
