@@ -115,7 +115,7 @@
             $("#hidden-search").keydown(function(e){
                 var currentQuery = $("#hidden-search").val(); //get the current value of the search input
                 if(e.keyCode == 13){ //if the user hits backspace...                
-                    document.location.href="http://annadesanctis.com.ar/nuevo/productos.php?q="+currentQuery;                       
+                    document.location.href="http://annadesanctis.com.ar/productos.php?q="+currentQuery;                       
                 }
             });
         });
