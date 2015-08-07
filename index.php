@@ -10,7 +10,7 @@ if(isset($_GET['lang'])){
 }
 
 // Slider Principal
-$sql = 'SELECT * FROM slider ;';
+$sql = 'SELECT * FROM slider where habilitado=1;';
 $slider=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
 $sql2 = 'SELECT * FROM slider_ta ORDER BY RAND() LIMIT 1;';
